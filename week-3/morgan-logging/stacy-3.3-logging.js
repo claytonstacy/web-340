@@ -1,3 +1,16 @@
+/*
+============================================
+Title: Assignment 3.2
+Author: Professor Krasso
+Date: 26 February 2020
+Modified By: Clayton Stacy
+Description: Logging
+============================================
+*/
+//Import header and log to the console
+var header = require('../../Stacy-header.js');
+console.log(header.display('Clayton', 'Stacy', '3.2 Logging' ));
+
 var express = require("express");
 var http = require("http");
 var path = require("path");
