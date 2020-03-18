@@ -1,43 +1,33 @@
 /*
 ============================================
-Title: Assignment 5.2
+Title: Assignment 5.3
 Author: Professor Krasso
 Date: 17 March 2020
 Modified By: Clayton Stacy
-Description: If Else Render
+Description: Pug Template
 ============================================
 */
 
-
+//Import express and pug
 var express = require("express");
 var http = require("http");
+var pug = require("pug");
 var path = require("path");
 
-app = express();
+//Declare express app
+var app = express();
 
-//Tell app to use views directory and use ejs files
+//Tell app to use pug for views and get those views from the views directory
 app.set("views", path.resolve(__dirname, "views"));
-app.set("view engine", "ejs");
+app.set("view engine", "pug");
 
-//Declare array of names
-var n = [
-  "Nigel",
-  "Rupert",
-  "Royston",
-  "Clive"
-];
-
-//Set home page to index and pass array as names
+//Create route for homepage to index view and pass in a message
 app.get("/", function(request, response) {
     response.render("index", {
-        names: n
-    })
+        message: "Pug looks pretty interesting!"
+    });
 });
 
-
-//Start app on port 8080
 http.createServer(app).listen(8080, function() {
     console.log("Application started on port 8080!");
 });
-
- 
