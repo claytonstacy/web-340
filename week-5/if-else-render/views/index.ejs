@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<hml>
+    <head>
+        <title>5.2 if else render</title>
+    </head>
+    <body>
+        <div role="main" class="container">
+            <br/><br/>
+            <h2>Name List</h2>
+                <ul>
+        <!-- If names array length is more than zero iterate through it-->
+            <% if (names.length > 0) {%>
+                <% for (var k = 0; k < names.length; k++) { %>
+                 <!-- Render an li element for each item in names array -->
+                    <li class="name"><%= names[k] %></li>
+
+                <% } %>
+            <% } %>
+            </ul>
+        </div>
+    </body>
+</hml>
