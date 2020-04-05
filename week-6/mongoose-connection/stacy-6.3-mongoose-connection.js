@@ -31,7 +31,7 @@ db.once("open", function() {
 });
 
 var app = express();
-app.use(logger('dev'));
+app.use(logger('short'));
 http.createServer(app).listen(5000, function() {
     console.log('Application started and listening on port 5000');
 });
