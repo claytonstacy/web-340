@@ -1,0 +1,12 @@
+{
+    "name": "if-else-render",
+    "author": "Clayton Stacy",
+    "private": true,
+    "dependencies": {
+        "chai": "^4.2.0",
+        "mocha": "^7.1.1"
+    },
+    "scripts": {
+        "test": "mocha"
+      }
+}
