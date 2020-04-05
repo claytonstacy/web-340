@@ -8,6 +8,10 @@ Description: EMS Mongo Schema and Model
 ============================================
 */
 
+var header = require('../Stacy-header');
+console.log(header.display('Clayton', 'Stacy', '7.4 EMS' ));
+
+
 var express = require("express");
 var http = require("http");
 var path = require("path");
