@@ -1,10 +1,10 @@
 /*
 ============================================
-Title: Assignment 7.4
+Title: EMS
 Author: Professor Krasso
 Date: 4 April 2020
 Modified By: Clayton Stacy
-Description: EMS Mongo Schema and Model
+Description: EMS
 ============================================
 */
 
