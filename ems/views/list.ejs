@@ -12,6 +12,7 @@
                 <th>Middle Name</th>
                 <th>Last Name</th>
                 <th>Email</th>
+                <th>Actions</th>
             </tr>
             </thead>
             <tbody>
@@ -21,6 +22,7 @@
                 <td><%= entry.middleName %></td>
                 <td><%= entry.lastName %></td>
                 <td><%= entry.email %></td>
+                <td><a href="/view/<%= entry.email %>">VIEW</a></td>
             </tr>
             </tbody>
             <% }) %>

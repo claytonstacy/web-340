@@ -113,6 +113,23 @@ app.get("/list", function(request, response) {
        });
     });
 });
+//Get for querying a single employee
+app.get("/view/:queryName", function (request, response) {
+    var queryName = request.params.queryName;
+    Employee.find({'email': queryName}, function(error, employees) {
+        if (error) throw error;
+        console.log(employees);
+        if (employees.length > 0) {
+            response.render("view", {
+                title: "Employee Record",
+                employee: employees
+            })
+        }
+        else {
+            response.redirect("/list")
+        }
+    });
+});
 
 http.createServer(app).listen(8080, function() {
     console.log("Application started on port 8080!");
